@@ -1,0 +1,16 @@
+{
+    "name": "philipowusuasare/grading",
+    "description": "php project before TDD lesson",
+    "autoload": {
+        "psr-4": {
+            "Philipowusuasare\\Grading\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Philip Owusu Asare",
+            "email": "philip.asare@amalitech.org"
+        }
+    ],
+    "require": {}
+}
