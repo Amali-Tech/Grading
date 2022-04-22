@@ -83,13 +83,13 @@ class Student
      */
     public function grade(): string
     {
-        if($this->avg > 70 && $this->avg <= 100) {return $this->grade = 'A';}
-        if($this->avg > 60 && $this->avg <= 69.9) {return $this->grade = 'B';}
-        if($this->avg > 50 && $this->avg <= 59.9) {return $this->grade = 'C';}
-        if($this->avg > 40 && $this->avg <= 49.9) {return $this->grade = 'D';}
-        if($this->avg > 0 && $this->avg <= 39.9) {return $this->grade = 'F';}
+        if($this->avg > 70 && $this->avg <= 100) { $this->grade = 'A';}
+        if($this->avg > 60 && $this->avg <= 69.9) { $this->grade = 'B';}
+        if($this->avg > 50 && $this->avg <= 59.9) { $this->grade = 'C';}
+        if($this->avg > 40 && $this->avg <= 49.9) { $this->grade = 'D';}
+        if($this->avg > 0 && $this->avg <= 39.9) { $this->grade = 'F';}
         
-        return $this->grade = 'unknown';
+        return $this->grade ?? 'unknown';
     }
     
     /**
