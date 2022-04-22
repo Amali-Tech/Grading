@@ -1,5 +1,5 @@
 <?php
-use App\Student;
+use Philipowusuasare\Grading\Student;
 
 require_once __DIR__ . '/vendor/autoload.php';
 

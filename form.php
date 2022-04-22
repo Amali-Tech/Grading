@@ -52,7 +52,7 @@
         </div>
     </form>
     
-    <!-- <?php if(isset($student) && $student instanceof \App\Student): ?>
+    <?php if(isset($student) && $student instanceof \Philipowusuasare\Grading\Student): ?>
         <h2 style="margin-top: 1.2rem;">ABC College Final Result Sheet</h2>
         <table class="table">
             <tr><th>#ID</th> <td> <?= $student->getId() ?></td></tr>
@@ -67,8 +67,9 @@
             <tr><th>Grade</th> <td><?= $student->grade() ?></td></tr>
             <tr><th>Final Result</th> <td><?= $student->finalResult() ?></td></tr>
             <tr><th>Remark</th> <td><?= $student->remark() ?></td></tr>
-        </table>
-    <?php endif; ?> -->
+        </table> 
+        <?php else: echo 'Not an instance of Student'?>
+    <?php endif; ?>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
